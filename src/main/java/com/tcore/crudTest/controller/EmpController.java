@@ -115,9 +115,9 @@ public class EmpController {
 			Map<String, Object> map = new HashMap<String, Object>();
 			try {
 				// 每页设置为n条记录
-				List<Employee> list = empService.findByLimit(page, 5);
+				List<Employee> list = empService.findByLimit(page, 7);
 				// 根据每页展示记录数确定总页数
-				int totalpages = empService.getTotalpages(5);// 参数pageSize
+				int totalpages = empService.getTotalpages(7);// 参数pageSize
 
 				System.out.println(list);
 				map.put("list", list);
